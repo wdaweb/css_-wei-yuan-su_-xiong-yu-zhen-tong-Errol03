@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BO</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: '微軟正黑體';
+        }
+
+        .head {
+            width: 320px;
+            height: 320px;
+            background: rgb(0, 0, 0);
+            border-radius: 50%;
+            position: absolute;
+            top: 300px;
+            left: 800px;
+        }
+/* 左黑 */
+        .head::before {
+            content: '';
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            left: 25px;
+            background: rgb(0, 0, 0);
+        }
+/* 右白 */
+        .head::after {
+            content: '';
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            position: absolute;
+            left: 249px;
+            top: 12px;
+            background: rgb(255, 255, 255);
+        }
+/* 左白 */
+        .white {
+            width: 35px;
+            height: 35px;
+            background: rgb(255, 255, 255);
+            border-radius: 50%;
+            position: absolute;
+            top: 12px;
+            left: 37px;
+        }
+/* 右黑 */
+        .white::after {
+            content: '';
+            width: 60px;
+            height: 60px;
+            background: rgb(0, 0, 0);
+            border-radius: 50%;
+            position: absolute;
+            top: -12px;
+            left: 200px;
+        }
+/* 左白 */
+        .eyes {
+            width: 65px;
+            height: 65px;
+            background: rgb(255, 255, 255);
+            border-radius: 50%;
+            position: absolute;
+            top: 65px;
+            left: 65px;
+        }
+/* 右白 */
+        .eyes::before {
+            content: '';
+            width: 65px;
+            height: 65px;
+            background: rgb(255, 255, 255);
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            left: 125px;
+        }
+/* 左黑 */
+        .eyesblack {
+            width: 45px;
+            height: 45px;
+            background: rgb(0, 0, 0);
+            border-radius: 50%;
+            position: absolute;
+            top: 75px;
+            left: 75px;
+        }
+/* 右黑 */
+        .eyesblack::before {
+            content: '';
+            width: 45px;
+            height: 45px;
+            background: rgb(0, 0, 0);
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            left: 125px;
+        }
+
+        .nose {
+            width: 130px;
+            height: 90px;
+            border-radius: 50%;
+            background: rgb(255, 255, 255);
+            position: absolute;
+            bottom: 105px;
+            right: 95px;
+        }
+
+
+        .nose::before {
+            content: '';
+            width: 35px;
+            height: 22px;
+            border-radius: 50%;
+            background: rgb(0, 0, 0);
+            position: absolute;
+            bottom: 60px;
+            right: 47.5px;
+        }
+
+        .nose::after {
+            content: '';
+            width: 80px;
+            height: 30px;
+            border-radius: 50%;
+            background: rgb(0, 0, 0);
+            position: absolute;
+            bottom: 18px;
+            right: 23px;
+        }
+
+        .cheek {
+            width: 75px;
+            height: 75px;
+            background: rgb(255, 0, 0);
+            border-radius: 50%;
+            position: absolute;
+            bottom: 120px;
+            left: -10px;
+
+        }
+
+        .cheek::before {
+            content: '';
+            width: 75px;
+            height: 75px;
+            background: rgb(255, 0, 0);
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0px;
+            left: 265px;
+
+        }
+
+        .v {
+            width: 45px;
+            height: 40px;
+            background: rgb(255, 255, 255);
+            position: absolute;
+            top: 250px;
+            left: 165px;
+            transform: skew(130deg);
+        }
+
+        .v::before {
+            content: '';
+            width: 45px;
+            height: 40px;
+            background: rgb(255, 255, 255);
+            position: absolute;
+            top: 0px;
+            left: -55px;
+            transform: skew(-112deg);
+            /* transform: rotate(180deg) scaleY(-1); */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="white"></div>
+        <div class="eyes"></div>
+        <div class="eyesblack"></div>
+        <div class="nose"></div>
+        <div class="cheek"></div>
+        <div class="v"></div>
+    </div>
+</body>
+
+</html>

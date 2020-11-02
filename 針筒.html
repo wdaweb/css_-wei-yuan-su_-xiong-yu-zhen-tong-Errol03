@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 800px;
+            height: 500px;
+            position: relative;
+            background-position: center;
+            font-family: '微軟正黑體';
+        }
+
+
+        .block1 {
+            width: 450px;
+            height: 120px;
+            border: 0.5px solid #808080;
+            position: absolute;
+            left: 400px;
+            top: 400px;
+            display: flex;
+            /* background-image: linear-gradient(to right, #FFF 50%, #FFa 50%); */
+            background-image: linear-gradient(to right, #FFF 50%, #eea2a2 50%, #bbc1bf 69%, #96d4ba 77%, #b49fda 85%, #7ac5d8 100%);
+        }
+
+        /* justify-content: center;
+            align-items: center; */
+
+        .block1 li {
+            /* color: rgba(70, 70, 70, 0.5); */
+            width: 12px;
+            height: 14px;
+            transform: translateY(-17px);
+            display: block;
+            float: left;
+        }
+
+        .block1 li~li {
+            border-left: 0.25px solid rgb(32, 32, 32, 0.5);
+            float: left;
+        }
+
+        .block1 p {
+
+            position: absolute;
+            top: 75px;
+            left: 10px;
+            font-weight: bolder;
+            color: rgb(173, 173, 173);
+        }
+
+        .block1::before {
+            content: '';
+            width: 450px;
+            height: 120px;
+            /* border: 0.5px solid #808080; */
+            position: absolute;
+            display: flex;
+            background: linear-gradient(rgb(255, 255, 255, 0.5)10%, rgba(117, 117, 117, 0.4)50%, rgb(255, 255, 255, 0.3)100%);
+
+        }
+
+        .block1::after {
+            content: '';
+            display: flex;
+            width: 30px;
+            height: 120px;
+            position: absolute;
+            right: 220px;
+            background: #000;
+        }
+
+        .block2 {
+            width: 50px;
+            height: 75px;
+            border-bottom: 0.5px solid rgba(0, 0, 0, 0.582);
+            border-left: 0.5px solid rgb(124, 124, 124);
+            border-top: 0.5px solid rgb(131, 131, 131);
+            position: absolute;
+            left: 350px;
+            top: 425px;
+            display: flex;
+        }
+
+        .block2::before {
+            content: '';
+            width: 50px;
+            height: 75px;
+            background: linear-gradient(rgb(255, 255, 255, 0.5)10%, rgba(117, 117, 117, 0.4)50%, rgb(255, 255, 255, 0.3)100%);
+            position: absolute;
+            display: flex;
+        }
+
+        .block3 {
+            width: 50px;
+            height: 120px;
+            border: 0.5px solid #868686;
+            position: absolute;
+            left: 300px;
+            top: 400px;
+            border-radius: 7px 10px;
+            display: flex;
+        }
+
+        .block3::before {
+            content: '';
+            width: 50px;
+            height: 120px;
+            background: linear-gradient(rgb(255, 255, 255, 0.5)10%, rgba(117, 117, 117, 0.4)50%, rgb(255, 255, 255, 0.3)100%);
+            position: absolute;
+            border-radius: 7px 10px;
+            display: flex;
+        }
+
+        .block4 {
+            width: 50px;
+            height: 75px;
+            border-bottom: 0.5px solid rgba(0, 0, 0, 0.582);
+            border-right: 0.5px solid rgb(124, 124, 124);
+            border-top: 0.5px solid rgb(131, 131, 131);
+            position: absolute;
+            left: 851px;
+            top: 425px;
+            display: flex;
+        }
+
+        .block4 {
+            content: '';
+            width: 50px;
+            height: 75px;
+            background: linear-gradient(rgb(255, 255, 255, 0.5)10%, rgba(117, 117, 117, 0.4)50%, rgb(255, 255, 255, 0.3)100%);
+            position: absolute;
+            display: flex;
+        }
+
+        .block4::before {
+            content: '';
+            display: block;
+            width: 100px;
+            /* height: 0.25px; */
+            border: 0.15px solid #33333377;
+            position: absolute;
+            top: 35px;
+            right: -102px;
+            display: flex;
+        }
+
+        .block5 li {
+            /* color: rgba(70, 70, 70, 0.5); */
+            width: 12px;
+            height: 14px;
+            transform: translateY(-10px);
+            display: block;
+            float: left;
+        }
+
+        /* .block5 li~li {
+            border-left: 0.25px solid rgb(32, 32, 32, 0.5);
+            float: left;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="block1">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <p>Made in Taiwan</p>
+    </div>
+    <div class="block2"></div>
+    <div class="block3"></div>
+    <div class="block4"></div>
+    <div class="block5">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>
